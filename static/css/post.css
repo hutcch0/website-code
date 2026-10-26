@@ -1,0 +1,118 @@
+.post-layout {
+    max-width: 1100px;
+    margin: 2.5rem auto 0;
+    padding: 0 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.post-card,
+.update-card,
+.card {
+    padding: 2rem 2.1rem;
+}
+
+.card { margin-bottom: 1.15rem; }
+
+.post-card h1,
+.update-card h1 {
+    margin: 0 0 0.4rem;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+}
+
+.post-meta {
+    margin-bottom: 1.6rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+.post-content p,
+.card p { margin: 0.7rem 0 1.1rem; }
+
+.post-content a,
+.update-content a { color: var(--accent); }
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.glass-box,
+.sidebar-box { padding: 1.3rem 1.35rem; }
+
+.sidebar-box { margin-bottom: 1rem; }
+
+.glass-box h3,
+.sidebar-box h3 {
+    margin: 0 0 0.7rem;
+    color: var(--accent);
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.side-list li,
+.side-nav li { margin: 0.6rem 0; }
+
+.card h2 { margin-top: 0; }
+.card h5 {
+    margin: -0.2rem 0 0.8rem;
+    color: var(--text-dim);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+.update-item {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.update-item span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.alert-wrapper {
+    margin-top: 1.5rem;
+}
+
+.privacy-alert {
+    padding: 1.2rem 1.3rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--warning);
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--warning);
+}
+
+.archive-banner {
+    max-width: 1100px;
+    margin: 1.5rem auto 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--archive-red);
+    border-radius: 10px;
+    background: rgba(239, 68, 68, 0.14);
+    color: var(--archive-red);
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.badge-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+    .post-layout { grid-template-columns: 1fr; }
+    .badge-grid { grid-template-columns: 1fr; }
+}

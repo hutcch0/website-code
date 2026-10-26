@@ -1,0 +1,13 @@
+.site-views {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    padding: 0 1.5rem;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.site-views strong { color: var(--accent); }
+
+.site-views small { opacity: 0.85; }

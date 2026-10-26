@@ -1,0 +1,42 @@
+.content-wrapper {
+    max-width: 1050px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem 4rem;
+}
+
+.hero-card {
+    margin-bottom: 1.4rem;
+    padding: 2.4rem 1.6rem;
+    text-align: center;
+}
+
+.hero-card h1 {
+    margin: 0 0 0.7rem;
+    font-size: clamp(2.3rem, 7vw, 3.6rem);
+}
+
+.hero-card p {
+    max-width: 40rem;
+    margin: 0.6rem auto;
+    color: var(--text-dim);
+}
+
+.last-updated { font-size: 0.9rem; }
+
+.now-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.15rem;
+}
+
+.glass-box { padding: 1.45rem 1.4rem; }
+
+.glass-box h2 { margin-top: 0; }
+
+.glass-box ul {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: var(--text-dim);
+}
+
+.glass-box li { margin: 0.6rem 0; }
