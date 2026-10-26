@@ -4,133 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archive | Chatroom Updates</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
+    <link rel="stylesheet" href="/static/css/post.css">
+    <link rel="stylesheet" href="/static/css/site-views.css">
     
-    <style>
-        :root {
-            --main-gradient: linear-gradient(135deg, #08030d, #2c003e);
-            --blue-gradient: linear-gradient(90deg, #38bdf8, #818cf8);
-            --card-bg: rgba(255, 255, 255, 0.04);
-            --accent: #38bdf8;
-            --archive-red: #ef4444;
-            --text: #f1f5f9;
-            --text-dim: #94a3b8;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: var(--main-gradient);
-            background-attachment: fixed;
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .main-header {
-            background: rgba(8, 3, 13, 0.8);
-            backdrop-filter: blur(12px);
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 2rem;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .archive-banner {
-            background: rgba(239, 68, 68, 0.15);
-            border: 1px solid var(--archive-red);
-            color: var(--archive-red);
-            text-align: center;
-            padding: 15px;
-            margin: 2rem auto;
-            max-width: 900px;
-            border-radius: 8px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 1.5rem 4rem;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            margin-bottom: 1.5rem;
-            backdrop-filter: blur(10px);
-        }
-
-        .card h2 {
-            margin-top: 0;
-            color: var(--accent);
-        }
-
-        .card h5 {
-            color: var(--text-dim);
-            margin: -10px 0 20px 0;
-            font-weight: 400;
-        }
-
-        .card p { margin: 8px 0; font-size: 0.95rem; }
-
-        .badge-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5px;
-            font-size: 0.85rem;
-            margin-top: 15px;
-        }
-
-        .sidebar-box {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 1.5rem;
-        }
-
-        .side-nav { list-style: none; padding: 0; }
-        .side-nav li { margin: 10px 0; }
-        .side-nav a { color: var(--text); text-decoration: none; }
-        .side-nav a:hover { color: var(--accent); }
-
-        @media (max-width: 800px) {
-            .container { grid-template-columns: 1fr; }
-        }
-    </style>
 </head>
 <body>
 
     <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
         <nav>
             <ul class="nav-links">
                 <li><a href="/html/index.html">Home</a></li>
                 <li><a href="/html/about-me.html">About Me</a></li>
                 <li><a href="/html/blog.html">Blog</a></li>
                 <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
                 <li><a href="/html/card.html">Links</a></li>
             </ul>
         </nav>
@@ -140,7 +32,7 @@
         ⚠️ PROJECT STATUS: ARCHIVED & DISCONTINUED
     </div>
 
-    <main class="container">
+    <main class="container post-layout">
         <section>
             <div class="card">
                 <h2>Project Introduction</h2>
@@ -218,5 +110,8 @@
         </aside>
     </main>
 
+    <footer class="site-views">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></footer>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
 </body>
 </html>
