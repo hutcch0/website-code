@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook | Hutcch</title>
+    <meta name="description" content="Sign Hutcch's guestbook and read messages from other visitors.">
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
+    <link rel="stylesheet" href="/static/css/guestbook.css">
+    <link rel="stylesheet" href="/static/css/site-views.css">
+</head>
+<body>
+    <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/about-me.html">About Me</a></li>
+                <li><a href="/html/blog.html">Blog</a></li>
+                <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
+                <li><a href="/html/card.html">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="hero-card">
+            <h1 class="gradient-text">Guestbook</h1>
+            <p>Say hi, leave a note, or tell me what you think of the site. Messages show up once I've approved them.</p>
+        </section>
+
+        <section class="glass-box">
+            <h2>Sign it</h2>
+            <form class="gb-form" id="gb-form" autocomplete="off">
+                <label for="gb-name">Name</label>
+                <input id="gb-name" name="name" type="text" maxlength="40" required>
+
+                <label for="gb-message">Message</label>
+                <textarea id="gb-message" name="message" maxlength="500" required></textarea>
+                <div class="gb-count" id="gb-count">0 / 500</div>
+
+                <div class="gb-trap" aria-hidden="true">
+                    <label for="gb-website">Leave this empty</label>
+                    <input id="gb-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+
+                <button type="submit">Send</button>
+                <p class="gb-status" id="gb-status" role="status"></p>
+            </form>
+        </section>
+
+        <section class="glass-box">
+            <h2>Messages</h2>
+            <ul class="gb-list" id="gb-list">
+                <li class="gb-empty">Loading...</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-views">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></footer>
+    <script src="/script/guestbook.js"></script>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
+</body>
+</html>
