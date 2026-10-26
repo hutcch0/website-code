@@ -3,22 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links Card</title>
+    <title>Links | Hutcch</title>
+    <meta name="description" content="Main links for Hutcch's site, projects, socials, RSS feed, and sitemap.">
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
     <link rel="stylesheet" href="/static/css/card.css">
+    <link rel="stylesheet" href="/static/css/site-views.css">
 </head>
 <body>
+    <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/about-me.html">About Me</a></li>
+                <li><a href="/html/blog.html">Blog</a></li>
+                <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
+                <li><a href="/html/card.html">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
     <div class="card">
         <div class="header">
-            <img src="/picture/about-me1.png" alt="Profile Picture" class="profile-img">
-            <h2>My Links</h2>
+            <img src="/picture/result.png" alt="Profile Picture" class="profile-img">
+            <h1>Hutcch Links</h1>
+            <p>Everything important in one place.</p>
         </div>
         <div class="links-container">
-            <a href="https://hutcch.neocities.org/html/" class="link-btn">my website</a>
-            <a href="https://hutcch.neocities.org/html/blog" class="link-btn">my blog website</a>
-            <a href="https://twitter.com/hutcch0" class="link-btn">my twitter</a>
-            <a href="https://bsky.app/profile/hutcch.bsky.social" class="link-btn">my bsky.social</a>
+            <section class="link-section">
+                <h2>Site</h2>
+                <a href="/html/index.html" class="link-btn">Home</a>
+                <a href="/html/about-me.html" class="link-btn">About Me</a>
+                <a href="/html/blog.html" class="link-btn">Blog</a>
+                <a href="/html/Projects-Page.html" class="link-btn">Projects</a>
+                <a href="/html/now.html" class="link-btn">Now Page</a>
+                <a href="/html/guestbook.html" class="link-btn">Guestbook</a>
+            </section>
+
+            <section class="link-section">
+                <h2>Socials</h2>
+                <a href="https://www.youtube.com/@hutcch" class="link-btn" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://www.twitch.tv/hutcch0" class="link-btn" target="_blank" rel="noopener noreferrer">Twitch</a>
+                <a href="https://www.instagram.com/huttch0/" class="link-btn" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://bsky.app/profile/hutcch.bsky.social" class="link-btn" target="_blank" rel="noopener noreferrer">Bluesky</a>
+                <a href="https://twitter.com/hutcch0" class="link-btn" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </section>
+
+            <section class="link-section">
+                <h2>Code</h2>
+                <a href="https://github.com/hutcch0/chatroom-website" class="link-btn" target="_blank" rel="noopener noreferrer">Chatroom (archived)</a>
+                <a href="https://github.com/hutcch0/bot/tree/main" class="link-btn" target="_blank" rel="noopener noreferrer">Discord Bot (archived)</a>
+                <a href="https://github.com/hutcch0/cc-tweaked-programs" class="link-btn" target="_blank" rel="noopener noreferrer">CC:Tweaked Programs</a>
+            </section>
+
+            <section class="link-section">
+                <h2>Feeds</h2>
+                <a href="/rss.xml" class="link-btn">RSS Feed</a>
+                <a href="/sitemap.xml" class="link-btn">Sitemap</a>
+            </section>
         </div>
     </div>
 
+    </main>
+    <footer class="site-views">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></footer>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
 </body>
 </html>
