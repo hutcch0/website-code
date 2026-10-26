@@ -4,70 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Hutcch</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
     <link rel="stylesheet" href="/static/css/about-me.css">
-    <style>
-    .profile-layout {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-}
-
-#profile-pic {
-
-    width: 200px;
-    height: 200px; 
-    
-    object-fit: cover; 
-    object-position: center; 
-    
-    border-radius: 50%;
-    border: 3px solid var(--accent);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
-}
-
-.profile-image-wrapper {
-    width: 200px;
-    flex-shrink: 0; 
-}
-.profile-card {
-    background: var(--card-bg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 3rem;
-    margin-bottom: 2rem;
-    backdrop-filter: blur(10px);
-}
-.status-dot {
-    width: 25px;
-    height: 25px;
-    background: #10b981; 
-    border: 4px solid #08030d;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-}
-
-.supporter-badge {
-    color: #f59e0b;
-    font-weight: 800;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-    </style>
+    <link rel="stylesheet" href="/static/css/site-views.css">
 </head>
 <body>
     <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
         <nav>
             <ul class="nav-links">
                 <li><a href="/html/index.html">Home</a></li>
                 <li><a href="/html/about-me.html">About Me</a></li>
                 <li><a href="/html/blog.html">Blog</a></li>
                 <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
                 <li><a href="/html/card.html">Links</a></li>
             </ul>
         </nav>
@@ -77,12 +30,10 @@
             <div class="profile-layout">
                 <div class="profile-image-wrapper">
                     <img src="/picture/result.png" alt="hutcch" id="profile-pic">
-                    <div class="status-dot"></div>
                 </div>
                 <div class="profile-info">
-                    <span class="supporter-badge">★ Neocities Supporter</span>
                     <h1 class="gradient-text">I'm Hutcch</h1>
-                    <p class="bio">Digital creator, hobbyist coder, and artist. Just someone doing things sometimes.</p>
+                    <p class="bio">Right now the two things I'm working on are this website, on my own VPS, and a Minecraft mod for Fabric and NeoForge. Yuki and the Discord bot are archived.</p>
                 </div>
             </div>
         </section>
@@ -107,12 +58,11 @@
                     <li>Lack of sleep</li>
                 </ul>
             </section>
-            <section class="glass-box full-width">
-                <h2 class="gradient-text">Final Words</h2>
-                <p>I appreciate you taking the time to read this. It's interesting to consider why someone would be interested in these personal details, but I'm glad you're here. Stick around and check out my projects!</p>
-            </section>
         </div>
     </main>
 
+    <footer class="site-views">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></footer>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
 </body>
 </html>
