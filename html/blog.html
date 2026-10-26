@@ -4,36 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Hutcch</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
     <link rel="stylesheet" href="/static/css/new.css">
-    
+    <link rel="stylesheet" href="/static/css/site-views.css">
 </head>
 <body>
-
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div>
-
-    <header>
-        <h1>Welcome to My Blog</h1>
-        <p>Updates and News</p>
+    <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/about-me.html">About Me</a></li>
+                <li><a href="/html/blog.html">Blog</a></li>
+                <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
+                <li><a href="/html/card.html">Links</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="container">
         <section>
-        
+            <div class="page-intro">
+                <h1 class="gradient-text">Blog</h1>
+                <p>Updates and news</p>
+            </div>
+
+            <div id="live-posts"></div>
+
+            <article class="card">
+                <span class="date">October 8, 2026</span>
+                <h2>Back on Windows</h2>
+                <p>Linux got unstable after about a year, so this PC is Windows again. The site stays on the server, Yuki is archived, and the unused apps are gone.</p>
+                <a href="/html/back-on-windows.html" class="read-more">Read the post →</a>
+            </article>
+
+            <article class="card">
+                <span class="date">October 3, 2026</span>
+                <h2>Leaving Neocities</h2>
+                <p>The site moved to my own server, got a cleanup and a new view counter, plus Yuki, Minecraft mod work, and a guestbook.</p>
+                <a href="/html/leaving-neocities.html" class="read-more">Read the post →</a>
+            </article>
+
             <article class="card">
                 <span class="date">March 19, 2026</span>
                 <h2>Updates and plans</h2>
-                <p>Every update that has happened this year plus whats happening this year.</p>
-                <a href="/html/update19-3-26.html" class="read-more">Whats happening in 2026 →</a>
+                <p>Notes from March: the redesign, the Discord bot, CC:Tweaked, and new projects.</p>
+                <a href="/html/update19-3-26.html" class="read-more">Read the post →</a>
             </article>
             
             <article class="card">
                 <span class="date">August 16, 2025</span>
-                <h2>Updates</h2>
-                <p>Every update that has happened this year.</p>
-                <a href="/html/updates.html" class="read-more">Update so far →</a>
+                <h2>2025 archive</h2>
+                <p>An old log. It is not what I am doing now. Linux and the music app in that post did not stay.</p>
+                <a href="/html/updates.html" class="read-more">Read the archive →</a>
             </article>
 
             <article class="card">
@@ -53,14 +80,10 @@
 
         <aside>
             <div class="sidebar-box">
-                <span class="supporter-badge">★ Neocities Supporter</span>
                 <h3>Site Stats</h3>
                 <p style="font-size: 0.85rem; color: var(--text-dim);">
-                    Views on website: <strong>3,442</strong>
+                    Views on website: <strong data-site-views>4,069</strong> <small data-site-views-date></small>
                 </p>
-                <div class="hit-counter">
-                    <img src="https://hitwebcounter.com/counter/counter.php?page=hutcch-blog&style=0007&nbdigits=5&type=page&initCount=2133" alt="Hits">
-                </div>
             </div>
 
             <div class="sidebar-box">
@@ -69,20 +92,18 @@
                     <li><a href="/html/index.html">Home</a></li>
                     <li><a href="/html/about-me.html">About Me</a></li>
                     <li><a href="/html/Projects-Page.html">Projects</a></li>
+                    <li><a href="/html/now.html">Now</a></li>
+                    <li><a href="/html/guestbook.html">Guestbook</a></li>
                     <li><a href="/html/card.html">Links</a></li>
-                    <li><a href="https://github.com/hutcch0/chatroom-website/tree/main">GitHub</a></li>
+                    <li><a href="/rss.xml">RSS Feed</a></li>
+                    <li><a href="https://github.com/hutcch0/bot/tree/main">Discord bot (archived)</a></li>
                 </ul>
             </div>
         </aside>
     </main>
 
-    <script>
-        window.onscroll = function() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        };
-    </script>
+    <script src="/script/blog-live.js"></script>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
 </body>
 </html>
