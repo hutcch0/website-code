@@ -3,109 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notice Board | Hutcch</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Home | Hutcch</title>
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
     <link rel="stylesheet" href="/static/css/notice-board.css">
-    <style>
-        .progress-container {
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-            height: 4px;
-            background: rgba(255,255,255,0.1);
-        }
-        .progress-bar {
-            height: 4px;
-            background: #38bdf8;
-            width: 0%;
-        }
-
-        .supporter-badge {
-            display: inline-block;
-            color: #f59e0b;
-            font-size: 0.75rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .hit-counter {
-            margin-top: 15px;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/css/site-views.css">
 </head>
 <body>
-
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div>
     <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
         <nav>
             <ul class="nav-links">
                 <li><a href="/html/index.html">Home</a></li>
                 <li><a href="/html/about-me.html">About Me</a></li>
                 <li><a href="/html/blog.html">Blog</a></li>
                 <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
                 <li><a href="/html/card.html">Links</a></li>
             </ul>
         </nav>
     </header>
-    <main class="content-wrapper">
-        <div class="notice-board">
-            <div class="image-container">
-                <img id="notice-image" src="/picture/index/picture1new.png" alt="Notice Image">
+    <main class="home">
+        <section class="home-hero">
+            <p class="eyebrow">Personal site</p>
+            <h1 class="gradient-text">Hutcch</h1>
+            <p>Right now the two things I'm working on are this website, on my own VPS, and a Minecraft mod for Fabric and NeoForge. Yuki and the Discord bot are archived.</p>
+            <div class="hero-actions">
+                <a class="btn" href="/html/Projects-Page.html">Projects</a>
+                <a class="btn btn-ghost" href="/html/now.html">Now</a>
             </div>
-            <div class="image-text" id="image-text">Its the new notice-board, enjoy the new look</div>
-            <div class="timer" id="timer">Time Left: 6s</div>
+        </section>
+
+        <div class="home-grid">
+            <article class="latest-post">
+                <p class="post-date">October 8, 2026</p>
+                <h2>Back on Windows</h2>
+                <p>Linux got unstable after about a year, so this PC is Windows again. The site still runs on my own server. Yuki is archived, and Music, Work Hours, WiFi Shield, and the proxy are off the server.</p>
+                <a class="read-more" href="/html/back-on-windows.html">Read the post</a>
+            </article>
+
+            <aside class="sidebar">
+                <div class="glass-box">
+                    <h2>Updates</h2>
+                    <ul class="update-list">
+                        <li><span>1</span> <a href="/html/back-on-windows.html">Back on Windows</a></li>
+                        <li><span>2</span> <a href="/html/leaving-neocities.html">Leaving Neocities</a></li>
+                        <li><span>3</span> <a href="/html/guestbook.html">Guestbook is open</a></li>
+                        <li><span>4</span> <a href="/html/back-on-windows.html">Unused apps removed</a></li>
+                        <li class="stats">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></li>
+                    </ul>
+
+                    <hr>
+                    <h2>Socials</h2>
+                    <ul class="social-links">
+                        <li><a href="https://www.youtube.com/@hutcch" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                        <li><a href="https://www.twitch.tv/hutcch0" target="_blank" rel="noopener noreferrer">Twitch</a></li>
+                        <li><a href="https://www.instagram.com/huttch0/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://bsky.app/profile/hutcch.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+                        <li><a href="https://twitter.com/hutcch0" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    </ul>
+                </div>
+            </aside>
         </div>
 
-        <aside class="sidebar">
-            <div class="glass-box">
-                <span class="supporter-badge">★ Neocities Supporter</span>
-                
-                <h2>Updates</h2>
-                <ul class="update-list">
-                    <li><span>1</span> New home page</li>
-                    <li><span>2</span> New blog page</li>
-                    <li><span>3</span> Got rid of the links page and made linktree in neocities</li>
-                    <li><span>4</span> New project link</li>
-                    <li><span>5</span> Redid all the pages</li>
-                    <li class="stats">Views: <strong>3,442</strong> <small>(19/03/26)</small></li>
-                </ul>
-
-                <div class="hit-counter">
-                    <img src="https://hitwebcounter.com/counter/counter.php?page=hutcch-main&style=0007&nbdigits=5&type=page&initCount=3442" alt="Hits">
-                </div>
-
-                <hr>
-                <h2>Socials</h2>
-                <ul class="social-links">
-                    <li><a href="https://www.youtube.com/@hutcch" target="_blank">YouTube</a></li>
-                    <li><a href="https://www.twitch.tv/hutcch0" target="_blank">Twitch</a></li>
-                    <li><a href="https://www.instagram.com/huttch0/" target="_blank">Instagram</a></li>
-                    <li><a href="https://twitter.com/Hutcch2" target="_blank">Twitter</a></li>
-                </ul>
-                
-                <div style="text-align: center; margin-top: 20px; opacity: 0.5;">
-                </div>
+        <section class="home-projects">
+            <h2>Current</h2>
+            <div class="home-project-row">
+                <a class="home-project" href="/html/Projects-Page.html">
+                    <strong>VPS</strong>
+                    <span>This website and the apps that run on my own server.</span>
+                </a>
+                <a class="home-project" href="/html/Projects-Page.html">
+                    <strong>Minecraft mod</strong>
+                    <span>My own mod, written for both Fabric and NeoForge.</span>
+                </a>
             </div>
-        </aside>
+        </section>
     </main>
-
-    <script src="/script/notice-board/notice-board.js"></script>
-    <script>
-        window.onscroll = function() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        };
-    </script>
+    <script src="/script/blog-live.js"></script>
+    <script src="/script/site-views.js" data-count-hit></script>
+    <script src="/script/site-fx.js"></script>
 </body>
 </html>
