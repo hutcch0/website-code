@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Hutcch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
+    <link rel="stylesheet" href="/static/css/site-views.css">
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        .not-found-card {
+            max-width: 620px;
+            padding: 2.6rem 1.8rem;
+            text-align: center;
+        }
+
+        .error-code {
+            margin: 0;
+            font-size: clamp(4rem, 18vw, 8rem);
+            line-height: 0.9;
+            font-weight: 800;
+        }
+
+        .not-found-card p {
+            color: var(--text-dim);
+        }
+
+        .link-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 1.6rem;
+        }
+
+        .link-grid a {
+            color: var(--accent);
+            text-decoration: none;
+            padding: 10px 16px;
+            border: 1px solid var(--accent);
+            border-radius: 999px;
+            font-weight: 600;
+            background: rgba(56, 189, 248, 0.1);
+        }
+
+        .link-grid a:hover {
+            color: var(--ink);
+            background: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <main class="not-found-card">
+        <h1 class="error-code">404</h1>
+        <h2>Page not found</h2>
+        <p>This page either moved, got renamed, or fell into the void. Try one of the main pages below.</p>
+        <nav class="link-grid" aria-label="Helpful links">
+            <a href="/html/index.html">Home</a>
+            <a href="/html/blog.html">Blog</a>
+            <a href="/html/Projects-Page.html">Projects</a>
+            <a href="/html/now.html">Now</a>
+            <a href="/html/guestbook.html">Guestbook</a>
+            <a href="/html/card.html">Links</a>
+        </nav>
+        <footer class="site-views">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></footer>
+    </main>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
+</body>
+</html>
