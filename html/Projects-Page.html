@@ -4,168 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Hutcch</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --main-gradient: linear-gradient(135deg, #08030d, #2c003e);
-            --blue-gradient: linear-gradient(90deg, #38bdf8, #818cf8);
-            --card-bg: rgba(255, 255, 255, 0.04);
-            --accent: #38bdf8;
-            --text: #f1f5f9;
-            --text-dim: #94a3b8;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: var(--main-gradient);
-            background-attachment: fixed;
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .main-header {
-            background: rgba(8, 3, 13, 0.8);
-            backdrop-filter: blur(12px);
-            padding: 1.2rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 2rem;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover { color: var(--accent); }
-
-        .content-wrapper {
-            max-width: 1100px;
-            margin: 4rem auto;
-            padding: 0 1.5rem;
-        }
-
-        .page-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .page-title h1 {
-            font-size: 3rem;
-            margin: 0;
-            background: var(--blue-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease, border 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            border: 1px solid var(--accent);
-        }
-
-        .project-image {
-            width: 100%;
-            height: 180px;
-            background: #000;
-            overflow: hidden;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.7;
-            transition: 0.3s;
-        }
-
-        .project-card:hover .project-image img { opacity: 1; }
-
-        .project-content {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .project-title {
-            font-size: 1.4rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            color: var(--accent);
-        }
-
-        .project-description {
-            font-size: 0.95rem;
-            color: var(--text-dim);
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .project-link a {
-            display: inline-block;
-            background: rgba(56, 189, 248, 0.1);
-            color: var(--accent);
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 8px;
-            border: 1px solid var(--accent);
-            font-weight: 600;
-            font-size: 0.85rem;
-            transition: 0.3s;
-            text-align: center;
-            width: fit-content;
-        }
-
-        .project-link a:hover {
-            background: var(--accent);
-            color: #08030d;
-        }
-
-        @media (max-width: 600px) {
-            .projects-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
+    <link rel="stylesheet" href="/static/css/Projects-Page.css">
+    <link rel="stylesheet" href="/static/css/site-views.css">
 </head>
 <body>
 
     <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
         <nav>
             <ul class="nav-links">
                 <li><a href="/html/index.html">Home</a></li>
                 <li><a href="/html/about-me.html">About Me</a></li>
                 <li><a href="/html/blog.html">Blog</a></li>
                 <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
                 <li><a href="/html/card.html">Links</a></li>
             </ul>
         </nav>
@@ -174,37 +30,64 @@
     <main class="content-wrapper">
         <div class="page-title">
             <h1>My Projects</h1>
-            <p>A collection of my code, art, and experiments.</p>
+            <p>Current work first. Yuki, the Discord bot, and the chatroom are archived.</p>
         </div>
 
         <div class="projects-grid">
-            
+
             <div class="project-card">
-                <div class="project-image">
-                    <img src="/picture/projects/2.png" alt="My Chatroom">
-                </div>
                 <div class="project-content">
-                    <div class="project-title">My Chatroom</div>
+                    <div class="project-kicker">Current</div>
+                    <div class="project-title">VPS</div>
                     <div class="project-description">
-                        A full-featured chatroom built with Python (Flask/Django) featuring mini-games and a blog system.
+                        This website and the apps that run on my own server.
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-kicker">Current</div>
+                    <div class="project-title">Website</div>
+                    <div class="project-description">
+                        This site. The code is open source on GitHub.
                     </div>
                     <div class="project-link">
-                        <a href="https://github.com/hutcch0/chatroom-website" target="_blank">View GitHub</a>
+                        <a href="https://github.com/hutcch0/website-code" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-kicker">Current</div>
+                    <div class="project-title">Minecraft mod</div>
+                    <div class="project-description">
+                        My own mod, written for both Fabric and NeoForge.
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title">Litematic tool</div>
+                    <div class="project-description">
+                        An AI tool that turns a text prompt into a litematic build.
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-image">
-                    <img src="/picture/projects/3.png" alt="Neocities Code">
+                    <img src="/picture/projects/T.png" alt="CC:Tweaked">
                 </div>
                 <div class="project-content">
-                    <div class="project-title">Website Source</div>
+                    <div class="project-title">CC:Tweaked</div>
                     <div class="project-description">
-                        The raw HTML and CSS code for this Neocities site. Open source for anyone to learn from.
+                        ComputerCraft programs for Minecraft, kept on GitHub so they can be copied into a world.
                     </div>
                     <div class="project-link">
-                        <a href="https://github.com/hutcch0/neocities-website-code/tree/main" target="_blank">View GitHub</a>
+                        <a href="https://github.com/hutcch0/cc-tweaked-programs" target="_blank" rel="noopener noreferrer">View GitHub</a>
                     </div>
                 </div>
             </div>
@@ -216,10 +99,7 @@
                 <div class="project-content">
                     <div class="project-title">Art to 3D</div>
                     <div class="project-description">
-                        Taking my 2D digital drawings and using AI/Blender tools to transform them into 3D models.
-                    </div>
-                    <div class="project-link">
-                        <a href="/html/art-to-3d.html">View Project</a>
+                        Taking my 2D digital drawings and using AI/Blender tools to transform them into 3D models. This one started as a flat drawing and came out as a full 3D model (minus the smoke).
                     </div>
                 </div>
             </div>
@@ -229,27 +109,39 @@
                     <img src="/picture/projects/bot.png" alt="Discord Bot">
                 </div>
                 <div class="project-content">
+                    <div class="project-kicker archived">Archived</div>
                     <div class="project-title">Discord Bot</div>
                     <div class="project-description">
-                        Custom Discord bot code featuring moderation tools and fun commands. Written in Python.
+                        Custom Discord bot code featuring moderation tools and fun commands. Written in Python. It is not running anymore.
                     </div>
                     <div class="project-link">
-                        <a href="https://github.com/hutcch0/bot/tree/main" target="_blank">View GitHub</a>
+                        <a href="https://github.com/hutcch0/bot/tree/main" target="_blank" rel="noopener noreferrer">View GitHub</a>
                     </div>
                 </div>
             </div>
-            
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-kicker archived">Archived</div>
+                    <div class="project-title">Yuki</div>
+                    <div class="project-description">
+                        Desktop companion with PNG-tuber sprites, a voice, and a chat that stayed on the server. The Linux corner-window client is paused.
+                    </div>
+                </div>
+            </div>
+
             <div class="project-card">
                 <div class="project-image">
-                    <img src="/picture/projects/T.png" alt="CC:Tweaked">
+                    <img src="/picture/projects/2.png" alt="My Chatroom">
                 </div>
                 <div class="project-content">
-                    <div class="project-title">CC:Tweaked</div>
+                    <div class="project-kicker archived">Archived</div>
+                    <div class="project-title">My Chatroom</div>
                     <div class="project-description">
-                        CC:Tweaked code for minecraft mod
+                        A Python chatroom with mini-games and a blog. It is discontinued. The old writeup is still on the blog.
                     </div>
                     <div class="project-link">
-                        <a href="https://github.com/hutcch0/cc-tweaked-programs" target="_blank">View GitHub</a>
+                        <a href="https://github.com/hutcch0/chatroom-website" target="_blank" rel="noopener noreferrer">View GitHub</a>
                     </div>
                 </div>
             </div>
@@ -257,5 +149,8 @@
         </div>
     </main>
 
+    <footer class="site-views">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></footer>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
 </body>
 </html>
