@@ -3,160 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Updates | Hutcch</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Archive | 2025 updates</title>
+    <link rel="alternate" type="application/rss+xml" title="Hutcch Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/shared.css">
+    <link rel="stylesheet" href="/static/css/post.css">
+    <link rel="stylesheet" href="/static/css/site-views.css">
     
-    <style>
-        :root {
-            --main-gradient: linear-gradient(135deg, #08030d, #2c003e);
-            --blue-gradient: linear-gradient(90deg, #38bdf8, #818cf8);
-            --card-bg: rgba(255, 255, 255, 0.04);
-            --accent: #38bdf8;
-            --text: #f1f5f9;
-            --text-dim: #94a3b8;
-            --warning: #fbbf24;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: var(--main-gradient);
-            background-attachment: fixed;
-            color: var(--text);
-            line-height: 1.8;
-            min-height: 100vh;
-        }
-
-        .main-header {
-            background: rgba(8, 3, 13, 0.8);
-            backdrop-filter: blur(12px);
-            padding: 1.2rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 2rem;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover { color: var(--accent); }
-
-        .content-wrapper {
-            max-width: 1000px;
-            margin: 3rem auto;
-            padding: 0 1.5rem;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-        }
-
-        .update-card {
-            background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
-            overflow: visible; 
-            height: auto;
-        }
-
-        .update-card h1 {
-            margin-top: 0;
-            font-size: 2.2rem;
-            background: var(--blue-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
-
-        .post-meta {
-            color: var(--text-dim);
-            font-size: 0.85rem;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 10px;
-        }
-
-        .update-item {
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 15px;
-        }
-
-        .update-item span { color: var(--accent); font-weight: bold; }
-
-        .alert-wrapper {
-            display: block !important;
-            width: 100%;
-            margin-top: 2rem;
-            min-height: 100px;
-            clear: both;
-        }
-
-        .privacy-alert {
-            display: block !important;
-            visibility: visible !important;
-            background: rgba(251, 191, 36, 0.1);
-            border-left: 4px solid var(--warning);
-            padding: 1.5rem;
-            border-radius: 8px;
-            color: var(--warning);
-            position: relative;
-            z-index: 10;
-        }
-
-        .sidebar-box {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 1.5rem;
-        }
-
-        .side-nav { list-style: none; padding: 0; }
-        .side-nav li { margin: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;}
-        .side-nav a { color: var(--text); text-decoration: none; transition: 0.2s; }
-        .side-nav a:hover { color: var(--accent); padding-left: 5px; }
-
-        @media (max-width: 800px) {
-            .content-wrapper { grid-template-columns: 1fr; }
-        }
-    </style>
 </head>
 <body>
 
     <header class="main-header">
+        <a class="wordmark" href="/html/index.html">Hutcch</a>
         <nav>
             <ul class="nav-links">
                 <li><a href="/html/index.html">Home</a></li>
                 <li><a href="/html/about-me.html">About Me</a></li>
                 <li><a href="/html/blog.html">Blog</a></li>
                 <li><a href="/html/Projects-Page.html">Projects</a></li>
+                <li><a href="/html/now.html">Now</a></li>
+                <li><a href="/html/guestbook.html">Guestbook</a></li>
                 <li><a href="/html/card.html">Links</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="content-wrapper">
+    <main class="content-wrapper post-layout">
         <article class="update-card">
             <h1>2025 Retrospective</h1>
-            <div class="post-meta">Current Status: Active | Last Log: August 16, 2025</div>
-            
+            <div class="post-meta">Archive | Logged August 16, 2025</div>
+
             <div class="update-content">
+                <p>This page is an archive. It is not what I am doing now. I moved back to Windows, and the music app mentioned below was taken off the server. Current notes are on the <a href="/html/now.html">Now</a> page and in <a href="/html/back-on-windows.html">Back on Windows</a>.</p>
                 <div class="update-item">
                     <span>•</span> 
                     <p>The Chatroom project is currently suspended. Several technical issues arose, and I'll provide a deeper breakdown when the time is right.</p>
@@ -169,12 +47,12 @@
 
                 <div class="update-item">
                     <span>•</span> 
-                    <p>Working on site-wide music integration and expanding the "About Me" section (WIP).</p>
+                    <p>At the time I was working on site-wide music and a bigger About page. The music app is gone now.</p>
                 </div>
 
                 <div class="update-item">
                     <span>•</span> 
-                    <p>Officially moved over to <strong>Linux</strong>. Join the good side—the freedom is worth it.</p>
+                    <p>I had moved over to <strong>Linux</strong>. That did not last. I'm back on Windows.</p>
                 </div>
 
                 <div class="update-item">
@@ -183,7 +61,9 @@
                 </div>
 
                 <div class="alert-wrapper">
+                    <div class="privacy-alert">
                         <strong>🛡️ Privacy Notice:</strong> Fight for freedom. With the UK's recent push for ID requirements, protect yourself. Use a VPN whenever possible and never give in on your digital privacy.
+                    </div>
                 </div>
             </div>
         </article>
@@ -192,7 +72,7 @@
             <div class="sidebar-box">
                 <h3 style="color:var(--accent); margin-top:0;">Dev Links</h3>
                 <ul class="side-nav">
-                    <li><a href="https://github.com/hutcch0/bot/tree/main">Discord Bot Repo</a></li>
+                    <li><a href="https://github.com/hutcch0/bot/tree/main">Discord Bot Repo (archived)</a></li>
                 </ul>
             </div>
 
@@ -208,5 +88,8 @@
         </aside>
     </main>
 
+    <footer class="site-views">Views: <strong data-site-views>4,069</strong> <small data-site-views-date></small></footer>
+    <script src="/script/site-views.js"></script>
+    <script src="/script/site-fx.js"></script>
 </body>
 </html>
